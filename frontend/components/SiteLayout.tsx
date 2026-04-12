@@ -1,6 +1,7 @@
 import TopBar from "./TopBar";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import CookieConsent from "./CookieConsent";
 import { contacto } from "@/lib/data";
 
 export default function SiteLayout({ children }: { children: React.ReactNode }) {
@@ -25,6 +26,8 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
           <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.857L.057 23.428a.75.75 0 0 0 .916.916l5.57-1.475A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.731 9.731 0 0 1-4.962-1.355l-.355-.212-3.683.975.99-3.608-.232-.372A9.718 9.718 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/>
         </svg>
       </a>
+
+      <CookieConsent />
     </>
   );
 }
