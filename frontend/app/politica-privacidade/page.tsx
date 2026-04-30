@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pol\u00EDtica de Privacidade | WOMAN \u2013 Instituto de Sa\u00FAde Integrativa",
-  description: "Pol\u00EDtica de Privacidade e Cookies do WOMAN \u2013 Instituto de Sa\u00FAde Integrativa.",
+  title: "Pol\u00EDtica de Privacidade",
+  description: "Pol\u00EDtica de Privacidade e Cookies do WOMAN \u2013 Instituto de Sa\u00FAde Integrativa, em conformidade com o RGPD.",
+  alternates: { canonical: "/politica-privacidade" },
+  robots: { index: true, follow: true },
 };
 
 export default function PoliticaPrivacidade() {

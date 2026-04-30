@@ -36,12 +36,13 @@ export default function Footer() {
           </p>
           <div className="flex gap-3">
             {[
-              { id: "instagram", label: "Instagram" },
-              { id: "facebook", label: "Facebook" },
+              { id: "instagram", label: "Instagram", href: "https://www.instagram.com/institutowomanleiria/" },
             ].map((rede) => (
               <a
                 key={rede.id}
-                href="#"
+                href={rede.href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-9 h-9 rounded-full flex items-center justify-center border transition-all duration-200"
                 style={{ borderColor: "rgba(255,255,255,0.2)", color: "rgba(255,255,255,0.55)" }}
                 aria-label={rede.label}
@@ -56,17 +57,11 @@ export default function Footer() {
                   el.style.color = "rgba(255,255,255,0.55)";
                 }}
               >
-                {rede.id === "instagram" ? (
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
-                    <circle cx="12" cy="12" r="4" />
-                    <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
-                  </svg>
-                ) : (
-                  <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
-                  </svg>
-                )}
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <circle cx="12" cy="12" r="4" />
+                  <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" />
+                </svg>
               </a>
             ))}
           </div>
@@ -86,14 +81,13 @@ export default function Footer() {
               { href: "/sobre", label: "Sobre a Dra. Michele" },
               { href: "/servicos", label: "Serviços" },
               { href: "/para-si", label: "Para Si" },
-              { href: "https://wa.me/351965589127", label: "Marcar Consulta", external: true },
+              { href: "/agendamento", label: "Marcar Consulta" },
               { href: "/contactos", label: "Contactos" },
+              { href: "/politica-privacidade", label: "Política de Privacidade" },
             ].map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                target={link.external ? "_blank" : undefined}
-                rel={link.external ? "noopener noreferrer" : undefined}
                 className="text-sm transition-colors hover:text-white"
                 style={{ color: "rgba(255,255,255,0.55)", fontFamily: "DM Sans, sans-serif" }}
               >
