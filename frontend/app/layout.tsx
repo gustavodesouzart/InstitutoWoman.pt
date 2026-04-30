@@ -69,7 +69,7 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
   },
   category: "health",
-  // verification: { google: "<colocar valor após verificar propriedade no Search Console>" },
+  verification: { google: "0CFEq_aw6VpMGsHg_U6yhFwNWCDLaRO1yRUuNhNe8-A" },
 };
 
 export default function RootLayout({
