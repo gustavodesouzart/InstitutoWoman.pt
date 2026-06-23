@@ -76,7 +76,7 @@ export const servicos: Servico[] = [
   {
     id: "nutricao-integrativa",
     icone: "Leaf",
-    titulo: "Nutrição Integrativa",
+    titulo: "Nutrição",
     descricaoCurta: "A alimentação como pilar da saúde feminina em cada fase da vida.",
     descricaoLonga:
       "Acompanhamento nutricional personalizado que considera o ciclo hormonal, as fases da vida e o bem-estar emocional da mulher. Uma abordagem que vai além das calorias — alimentar o corpo, a mente e as emoções.",
@@ -113,12 +113,20 @@ export const servicos: Servico[] = [
     descricaoLonga:
       "Acompanhamento especializado no desenvolvimento da inteligência emocional — reconhecer, compreender e gerir emoções para uma vida mais equilibrada e saudável. Técnicas de mindfulness, regulação emocional e gestão do stress adaptadas à realidade da Mulher.",
   },
+  {
+    id: "sexologia-psicologia",
+    icone: "HeartHandshake",
+    titulo: "Sexologia e Psicologia",
+    descricaoCurta: "Acompanhamento psicológico especializado nas disfunções sexuais femininas.",
+    descricaoLonga:
+      "Apoio psicológico e sexológico para mulheres que enfrentam dificuldades na sua vida íntima. Uma abordagem acolhedora e sem julgamento, que integra a dimensão emocional e relacional da sexualidade feminina.",
+  },
 ];
 
 // ─── Serviços (preview para homepage) ────────────────────────────────────────
 
-// Show a cross-section: pélvica, nutrição, coaching
-export const servicosPreview = [servicos[0], servicos[8], servicos[9]];
+// Show a cross-section: pélvica, nutrição, coaching, sexologia
+export const servicosPreview = [servicos[0], servicos[8], servicos[9], servicos[13]];
 
 // ─── Para Quem É ─────────────────────────────────────────────────────────────
 
