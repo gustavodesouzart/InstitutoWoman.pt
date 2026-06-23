@@ -113,20 +113,12 @@ export const servicos: Servico[] = [
     descricaoLonga:
       "Acompanhamento especializado no desenvolvimento da inteligência emocional — reconhecer, compreender e gerir emoções para uma vida mais equilibrada e saudável. Técnicas de mindfulness, regulação emocional e gestão do stress adaptadas à realidade da Mulher.",
   },
-  {
-    id: "sexologia-psicologia",
-    icone: "HeartHandshake",
-    titulo: "Sexologia e Psicologia",
-    descricaoCurta: "Acompanhamento psicológico especializado nas disfunções sexuais femininas.",
-    descricaoLonga:
-      "Apoio psicológico e sexológico para mulheres que enfrentam dificuldades na sua vida íntima. Uma abordagem acolhedora e sem julgamento, que integra a dimensão emocional e relacional da sexualidade feminina.",
-  },
 ];
 
 // ─── Serviços (preview para homepage) ────────────────────────────────────────
 
-// Show a cross-section: pélvica, nutrição, coaching, sexologia
-export const servicosPreview = [servicos[0], servicos[8], servicos[9], servicos[13]];
+// Show a cross-section: pélvica, nutrição, coaching
+export const servicosPreview = [servicos[0], servicos[8], servicos[9]];
 
 // ─── Para Quem É ─────────────────────────────────────────────────────────────
 
