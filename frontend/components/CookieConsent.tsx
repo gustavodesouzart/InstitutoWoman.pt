@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { updateConsent } from "@/lib/consent";
 
 export default function CookieConsent() {
   const [visible, setVisible] = useState(false);
@@ -14,11 +15,13 @@ export default function CookieConsent() {
 
   function accept() {
     localStorage.setItem("cookie-consent", "accepted");
+    updateConsent(true);
     setVisible(false);
   }
 
   function reject() {
     localStorage.setItem("cookie-consent", "rejected");
+    updateConsent(false);
     setVisible(false);
   }
 

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import SiteLayout from "@/components/SiteLayout";
+import Analytics from "@/components/Analytics";
 import { SITE_URL, medicalBusinessSchema, jsonLdScript } from "@/lib/seo";
 
 export const metadata: Metadata = {
@@ -80,6 +81,7 @@ export default function RootLayout({
   return (
     <html lang="pt-PT">
       <body>
+        <Analytics />
         <SiteLayout>{children}</SiteLayout>
         <script
           type="application/ld+json"
